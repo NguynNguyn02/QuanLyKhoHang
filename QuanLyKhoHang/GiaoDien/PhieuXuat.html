@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="~/Content/fontawesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/Content/Site.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="admin">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a style=" text-decoration:none;" onmouseover="this.style.color='white';" onmouseout="this.style.color='white';" class="slide-brand d-flex align-items-center justify-content-center" href="~/Home/Welcome">
+                <div class="sidebar-brand-icon rotate-n-15">
+
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item ">
+                <a style="padding-left: 2rem;" class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
+
+                    <span>Nhà Cung Cấp</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Nhà Cung Cấp</h6>
+                        <a class="collapse-item active" href="~/NhaCungCaps/Index">Danh Sách</a>
+                        <a class="collapse-item" href="~/NhaCungCaps/Create">Thêm</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a style="padding-left: 2rem;" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+
+                    <span>Khách Hàng</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Khách Hàng</h6>
+                        <a class="collapse-item" href="~/KhachHangs/Index">Danh Sách</a>
+                        <a class="collapse-item" href="~/KhachHang/Create">Thêm</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a style="padding-left: 2rem;" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+
+                    <span>Hàng Hóa</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Hàng Hóa</h6>
+                        <a class="collapse-item" href="~/SanPhams/Index">Danh Sách</a>
+                        <a class="collapse-item" href="~/SanPhams/Create">Thêm</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a style="padding-left: 2rem;" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePN" aria-expanded="true" aria-controls="collapsePN">
+
+                    <span>Phiếu Nhập</span>
+                </a>
+                <div id="collapsePN" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Phiếu Nhập</h6>
+                        <a class="collapse-item" href="~/PhieuNhaps/Index">Danh Sách</a>
+                        <a class="collapse-item" href="~/PhieuNhaps/Create">Thêm</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a style="padding-left: 2rem;" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePX" aria-expanded="true" aria-controls="collapsePX">
+
+                    <span>Phiếu Xuất</span>
+                </a>
+                <div id="collapsePX" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Phiếu Xuất</h6>
+                        <a class="collapse-item" href="login.html">Danh Sách</a>
+                        <a class="collapse-item" href="register.html">Thêm</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a style="padding-left: 2rem;" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTK" aria-expanded="true" aria-controls="collapseTK">
+
+                    <span>Tài Khoản</span>
+                </a>
+                <div id="collapseTK" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tài Khoản</h6>
+                        <a class="collapse-item" href="login.html">Danh Sách</a>
+                        <a class="collapse-item" href="register.html">Thêm</a>
+
+                    </div>
+                </div>
+            </li>
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+
+        <div style="width: 100%;" class="content">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control bg-light border-0 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <div class="topbar-divider d-none d-sm-block"></div>
+
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                            <span class="mr-2 d-lg-inline text-gray-600 small">Trần Bá Lập</span>
+
+                            <img style="width: 2rem; height: 2rem;" class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="ti-user w-block-2 text-gray-400"></i> Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="ti-settings w-block-2 text-gray-400"></i> Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="ti-list w-block-2 text-gray-400"></i> Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="ti-shift-right w-block-2 text-gray-400"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="container-fluid">
+                <div style="max-height: 500px ;" class="row px-5 overflow-auto">
+                    <h1 style="text-align: center; width: 100%;" class="h3 mb-2 text-gray-800">Danh Sách Phiếu Nhập</h1>
+
+                    <table class="table table-hover table-bordered ">
+                        <thead class="text-center">
+                            <th scope="col">Mã Phiếu</th>
+                            <th scope="col">Mã Nhà Cung Cấp</th>
+                            <th scope="col">Nhân Viên</th>
+                            <th scope="col">Ngày Lập</th>
+                            <th scope="col">Tổng Tiền</th>
+                            <th scope="col">Action</th>
+                        </thead>
+
+
+                        @foreach (var item in Model) {
+                        <tr style="text-align:center">
+                            <td>
+                                @if (item != null) { @Html.DisplayFor(modelItem => item.MaPhieuNhap) }
+                            </td>
+                            <td>
+                                @if (item != null && item.NhaCungCap != null) { @Html.DisplayFor(modelItem => item.NhaCungCap.TenNCC) }
+                            </td>
+                            <td>
+                                @if (item != null && item.TaiKhoan != null) { @Html.DisplayFor(modelItem => item.TaiKhoan.HoTen) }
+                            </td>
+                            <td>
+                                @if (item != null) { @Html.DisplayFor(modelItem => item.NgayLap) }
+                            </td>
+                            <td>
+                                @if (item != null) { @Html.DisplayFor(modelItem => item.ThanhTien) }
+                            </td>
+                            <td style="display: flex; justify-content: space-around;">
+                                @if (item != null) { @Html.ActionLink("Details", "ChiTietPhieu", new { id = item.MaPhieuNhap }, new { @class = "btn btn-primary" }) @Html.ActionLink("Delete", "Delete", new { id = item.MaPhieuNhap }, new { @class = "btn btn-danger" }) }
+                            </td>
+                        </tr>
+                        }
+
+
+
+                    </table>
+                </div>
+                <div class="container pt-3">
+                    <div class="row justify-content-end">
+                        <a href="~/PhieuNhaps/Create" class="btn btn-primary w-block-8">Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
